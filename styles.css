@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/quicksand_semibold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'quicksand', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.counter {
+    background: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+    width: 23%;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.counter:last-child {
+    margin-right: 0;
+}
+
+textarea {
+    font-family: 'quicksand', Arial, sans-serif;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .counters {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .counter {
+        width: 22%;
+    }
+
+    .counter:last-child {
+        margin-right: 0;
+    }
+}
